@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tournaments</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Tournaments</h1>
+        
+        <!-- Section for Tournaments -->
+        <section id="tournaments">
+            <h2>Manage Tournaments</h2>
+            <form id="tournament-form">
+                <input type="text" id="tournament-name" placeholder="Tournament Name" required>
+                <input type="date" id="tournament-date" required>
+                <input type="text" id="tournament-location" placeholder="Location" required>
+                <button type="submit">Add Tournament</button>
+            </form>
+            <ul id="tournament-list"></ul>
+        </section>
+
+        <!-- Section for Participants -->
+        <section id="participants">
+            <h2>Manage Participants</h2>
+            <form id="participant-form">
+                <input type="text" id="participant-name" placeholder="Participant Name" required>
+                <input type="number" id="tournament-id" placeholder="Tournament ID" required>
+                <button type="submit">Add Participant</button>
+            </form>
+            <ul id="participant-list"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

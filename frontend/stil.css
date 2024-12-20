@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6f0; /* Pastel pink background */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Section Titles */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff6392; /* Vibrant pink */
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #ff85a1; /* Soft pink */
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form input, form button {
+    padding: 12px 15px;
+    margin: 10px 5px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ffb3c7; /* Light pink border */
+    outline: none;
+}
+
+form input:focus {
+    border-color: #ff6392; /* Vibrant pink focus */
+    box-shadow: 0 0 8px rgba(255, 99, 146, 0.5);
+}
+
+form button {
+    background-color: #ff6392; /* Vibrant pink button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff85a1; /* Soft pink hover */
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    background: #fff5fa; /* Very light pink */
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ffd6e8; /* Light pink border */
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    background: #ffe6f0; /* Pastel pink */
+    transform: scale(1.02);
+}
+
+/* Buttons inside lists */
+ul li button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #ff6392; /* Vibrant pink */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+ul li button:hover {
+    background-color: #ff85a1; /* Soft pink */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    form input, form button {
+        font-size: 0.9rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
